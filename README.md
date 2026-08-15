@@ -20,7 +20,7 @@ Plain WireGuard UDP is easy to fingerprint. VLESS + REALITY mimics a real HTTPS 
 ### 1. VPS (Debian / Ubuntu)
 
 ```bash
-git clone https://github.com/<your-anon-account>/openwrt-xray-reality.git
+git clone https://github.com/ZweiCosmos/openwrt-xray-reality.git
 cd openwrt-xray-reality
 sudo ./install-server.sh
 ```
