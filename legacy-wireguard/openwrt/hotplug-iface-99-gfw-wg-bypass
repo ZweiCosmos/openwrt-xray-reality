@@ -1,0 +1,6 @@
+#!/bin/sh
+# /etc/hotplug.d/iface/99-gfw-wg-bypass — re-apply policy routing when WG is up
+[ "$ACTION" = "ifup" ] || exit 0
+[ "$INTERFACE" = "wg0" ] || exit 0
+[ -x /usr/share/gfw-wg-bypass/apply-routing.sh ] || exit 0
+/usr/share/gfw-wg-bypass/apply-routing.sh reload

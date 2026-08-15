@@ -1,0 +1,9 @@
+#!/bin/sh
+# Re-apply tproxy when LAN/WAN comes up
+[ "$ACTION" = "ifup" ] || exit 0
+case "$INTERFACE" in
+  lan|wan|wan6) ;;
+  *) exit 0 ;;
+esac
+[ -x /usr/share/gfw-reality/apply-tproxy.sh ] || exit 0
+/usr/share/gfw-reality/apply-tproxy.sh reload

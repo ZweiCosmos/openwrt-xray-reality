@@ -1,0 +1,21 @@
+# Generated / secrets — never commit
+keys/
+client.env
+client-bundle.tar.gz
+*.key
+*.pub
+reality.json
+reality.env
+
+# Runtime / local
+*.log
+*.tmp
+.DS_Store
+*~
+*.swp
+
+# Downloaded binaries / geo
+**/xray
+**/geoip.dat
+**/geosite.dat
+Xray-linux-*.zip
